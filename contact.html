@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subit Fitness</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Lobster&family=Playfair+Display:ital@1&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo 2', cursive;
+        color: white;
+        /* margin: 0px;
+        padding: 0px; */
+        background: url('img/contact.jpg');
+        background-size: cover;
+
+    }
+
+    .left {
+        display: inline-block;
+        position: absolute;
+        left: 91px;
+        top: 30px;
+    }
+
+    .left img {
+        width: 130px;
+        filter: invert(100%);
+        border-radius: 10px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 25px;
+        line-height: 19px;
+        color: white;
+    }
+
+    .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 38px;
+
+    }
+
+    .mid {
+        border-radius: 10px;
+        background-color: azure;
+        display: block;
+        margin: 43px auto;
+        width: 40%;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: rgb(14 13 5);
+        text-decoration: none;
+        padding: 34px 23px;
+        font-style: initial;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: blue;
+    }
+
+    .btn {
+        font-family: 'Baloo 2', cursive;
+        margin: 6px 9px;
+        background-color: black;
+        color: aliceblue;
+        padding: 17px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: gray;
+    }
+    .contact-box{
+        background: #fff;
+        display: flex;
+        padding: 12px 12px;
+    }
+    .contact-left{
+        flex-basis: 60%;
+        padding: 40px 60px;
+        color: black;
+    }
+    .contact-right{
+        flex-basis: 60%;
+        padding: 40px;
+        background: #1c00b5;
+        color: white;
+    }
+    .container1 h1{
+        margin-bottom: 10px;
+    } 
+    .container1 p{
+        margin-bottom: 40px;
+    }
+    .input-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .input-group{
+        flex-basis: 30%;
+    }
+    input{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        padding-bottom: 5px;
+    }
+    textarea{
+        width: 100%;
+        border: 1px solid #ccc;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    label{
+        margin-bottom: 6px;
+        display: block;
+        color: #1c00b5;
+    }
+    .container1{
+        display: block;
+    }
+    .contact-left h3{
+        color: #1c00b5;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    tr td:first-child{
+        padding-right: 20px;
+    }
+    tr td{
+        padding-top: 20px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="">
+            <div>Subit Fitness</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#index.html" >Home</a></li>
+                <li><a href="#About.html" >About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container1">
+        <h1>Contact Us</h1>
+        <p>A gym is a place where people go to train and exercise, but also to unwind, socialize, and recharge. Therefore, a good gym is a facility that promotes physical activity, provides a safe, functional, and comfortable workout environment, and creates a pleasant and enjoyable atmosphere for recreation and socialization.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your Request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Enter your Name">
+                            <label>Phone</label>
+                            <input type="text" placeholder="Enter your phone number">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email address">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Enter your Subject">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contact@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>98458474122</td>
+                    </tr>
+                    <tr>
+                        <td>Address</td>
+                        <td>Banglamukhi, Lalitpur</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
